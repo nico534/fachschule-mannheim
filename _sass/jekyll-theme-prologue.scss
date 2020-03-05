@@ -248,7 +248,6 @@
 		&.avatar48 {
 			width: 48px;
 			height: 48px;
-			background: #f00;
 
 			img {
 				width: 48px;
@@ -541,7 +540,7 @@
 			position: relative;
 			color: #fff;
 			font-weight: 600;
-			font-size: 1em;
+			font-size: 0.9em;
 			line-height: 1em;
 		}
 
@@ -661,24 +660,32 @@
 			background-image: url('images/overlay.png');
 
 			&.dark {
-				color: #ddd;
-				color: rgba(255, 255, 255, 0.75);
+				color: #1d1d1d;
+				color: rgba(20, 20, 20, 1);
+				font-weight: bold;
 
 				h2, h3, h4, h5, h6 {
 					color: inherit;
+					font-weight: inherit;
+				}
+
+				span {
+					background-color: rgba(240, 240, 240, 0.5);
 				}
 
 				strong {
-					color: #fff;
+					color: #000;
 					border-color: inherit;
+					font-weight: inherit;
 				}
 
 				a {
-					color: #fff;
+					color: #1d1d1d;
 					border-color: inherit;
+					font-weight: inherit;
 
 					&:hover {
-						border-bottom-color: rgba(255, 255, 255, 0);
+						border-bottom-color: rgba(20, 20, 20, 0);
 					}
 				}
 			}
