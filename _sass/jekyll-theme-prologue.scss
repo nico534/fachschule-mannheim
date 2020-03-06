@@ -530,7 +530,7 @@
 
 	#logo {
 		position: relative;
-		margin: 1.75em 1.5em 1.5em 1.5em;
+		margin: 5px;
 		min-height: 48px;
 		cursor: default;
 
@@ -772,6 +772,11 @@
 	height: 315px;
 }
 
+.main_logo {
+	width: 95%;
+	height: auto;
+}
+
 /* Wide */
 
 	@include breakpoint(wide) {
@@ -871,7 +876,7 @@
 			#logo {
 				.image {
 					position: relative;
-					margin: 0 0 0.5em 0;
+					margin:  2px;
 				}
 			}
 
@@ -991,7 +996,7 @@
 			}
 
 			#logo {
-				margin: 1.5em 1.25em 1.25em 1.25em;
+				margin: 5px;
 			}
 
 			#nav {
