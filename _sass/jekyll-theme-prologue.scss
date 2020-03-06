@@ -26,6 +26,7 @@
 		grid: ( gutters: (40px, 40px) ),
 		conditionals: true,
 		containers: 1400px,
+
 		breakpoints: (
 			wide: (
 				containers: 1200px,
@@ -723,6 +724,43 @@
 		}
 	}
 
+	.collapsible {
+	background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+	margin-bottom: 1em;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 23px;
+	}
+
+	.collapsible:before {
+		content: '\02795'; /* Unicode character for "plus" sign (+) */
+		font-size: 13px;
+		color: white;
+		float: right;
+		margin-right: 5px;
+	}
+
+	.active, .collapsible:hover {
+  	background-color: #ccc;
+	}
+
+	.active:before {
+  	content: "\2796"; /* Unicode character for "minus" sign (-) */
+	}
+
+	/* The content of a collapsible */
+	.download_list {
+  padding: 0 18px;
+	max-height: 0;
+  overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
 /* Wide */
 
 	@include breakpoint(wide) {
@@ -750,6 +788,8 @@
 			#main {
 				margin-left: 300px;
 			}
+
+
 
 	}
 

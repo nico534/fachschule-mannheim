@@ -1,11 +1,10 @@
 <!-- List of download-Files -->
 {%- assign folder = site.static_files | where_exp: "item", "item.path contains include.folder-name" -%}
-<div>
+<div class="download_list">
   <ul>
     {%- for item in folder -%}
 
       <li><a href="{{site.url}}{{item.path}}">{{item.name}}</a></li>
     {%- endfor-%}
   </ul>
-
 </div>
