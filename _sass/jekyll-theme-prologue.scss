@@ -292,6 +292,7 @@
 
 	ul {
 		list-style: disc;
+		list-style-position: inside;
 
 		&.icons {
 			cursor: default;
@@ -956,7 +957,7 @@
 					}
 				}
 			}
-315
+
 		/* Header */
 
 			#header {
