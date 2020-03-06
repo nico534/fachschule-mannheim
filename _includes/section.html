@@ -1,6 +1,7 @@
 {%- comment -%}
   Include vars:
 	title
+  title-color
   subtitle
 	photo
 	photo-alt
@@ -26,7 +27,11 @@
 {%- else -%}
 	{%- capture _heading -%}
 		<header>
-			<h2>
+      {%- if include.title-color != null -%}
+			   <h2 style="color: {{- include.title-color -}};"> 
+      {%- else -%}
+        <h2>
+      {%- endif -%}
         {%- if include.auto-header == null or include.auto-header == 'use-title' -%}
           {{- _title -}}
         {%- else -%}
