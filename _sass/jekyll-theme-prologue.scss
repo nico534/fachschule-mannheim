@@ -761,6 +761,16 @@
 	transition: max-height 0.2s ease-out;
 }
 
+.card {
+	width: 600px;
+	height: 450px;
+}
+
+.video {
+	width: 560px;
+	height: 315px;
+}
+
 /* Wide */
 
 	@include breakpoint(wide) {
@@ -789,7 +799,10 @@
 				margin-left: 300px;
 			}
 
-
+			.card {
+				width: 800px;
+				height: 550px;
+			}
 
 	}
 
@@ -948,7 +961,7 @@
 					}
 				}
 			}
-
+315
 		/* Header */
 
 			#header {
@@ -1084,6 +1097,16 @@
 					}
 				}
 			}
+
+			.card {
+				width: 90vw;
+				height: 100vw;
+			}
+
+			.video {
+				width: 90vw;
+				height: 50vw;
+			}
 	}
 
 /* Mobile */
@@ -1151,6 +1174,11 @@
 						}
 					}
 				}
+			}
+
+			.card {
+				width: 90vw;
+				height: 100vw;
 			}
 
 	}
