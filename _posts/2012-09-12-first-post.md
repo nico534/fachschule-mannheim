@@ -4,4 +4,4 @@ author: Chris
 layout: post
 ---
 
-{%- include imageslider.html height="50" unit="%" duration="7" -%}
+{%- include imageslider.html -%}

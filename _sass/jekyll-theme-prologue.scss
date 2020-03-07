@@ -783,11 +783,38 @@
 
 /* Slideshow */
 
-.slide {
-  display: flex;
+.outer_slider {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
 }
 
+.slider {
+	overflow: hidden;
+	width: 100%;
+	user-select: none;
+}
 
+.slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	transition: transform 0.4s ease-in-out;
+	user-select: none;
+	cursor: all-scroll;
+}
+
+.slider figure img {
+	float: left;
+	width: 20%;
+	user-select: none;
+}
+
+.right{
+	float: right;
+	margin-top: 2px;
+}
 /* Wide */
 
 	@include breakpoint(wide) {
@@ -1119,6 +1146,10 @@
 				width: 90vw;
 				height: 50vw;
 			}
+
+			.outer_slider {
+				width: 90vw;
+			}
 	}
 
 /* Mobile */
@@ -1191,6 +1222,10 @@
 			.card {
 				width: 90vw;
 				height: 100vw;
+			}
+
+			.outer_slider {
+				width: 90vw;
 			}
 
 	}
