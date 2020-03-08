@@ -56,7 +56,7 @@ function left(){
   }
   interrupted = true;
   canTranslate = false;
-  slide_wrapper.style.transition = "transform 0.4s ease-in-out";
+  slide_wrapper.style.transition = "transform 0.4s ease-out";
   counter--;
   slide_wrapper.style.transform = 'translateX(' + (-width * counter) + '%)';
 }
@@ -69,6 +69,18 @@ function right(){
   interrupted = true;
   canTranslate = false;
   slide_wrapper.style.transition = "transform 0.4s ease-out";
+  counter++;
+  slide_wrapper.style.transform = 'translateX(' + (-width * counter) + '%)';
+}
+
+function autoTransition() {
+  second = 0;
+  if(!canTranslate){
+    return;
+  }
+  interrupted = true;
+  canTranslate = false;
+  slide_wrapper.style.transition = "transform 1s ease-in-out";
   counter++;
   slide_wrapper.style.transform = 'translateX(' + (-width * counter) + '%)';
 }
@@ -121,6 +133,6 @@ window.setInterval(autoSlide, 1000);
 function autoSlide(){
   second++;
   if(second > 5){
-    right();
+    autoTransition();
   }
 }
