@@ -7,7 +7,7 @@
     <div class="slider">
       <figure>
         {%- for item in folder -%}
-          <img draggable="false" src="{{site.url}}{{site.baseurl}}/{{item.path}}" alt="">
+          <img draggable="false" ondragstart="return false;" src="{{site.url}}{{site.baseurl}}/{{item.path}}" alt="">
         {%- endfor-%}
         </figure>
     </div>
