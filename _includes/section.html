@@ -28,16 +28,16 @@
 	{%- capture _heading -%}
 		<header>
       {%- if include.title-color != null -%}
-			   <h2 style="color: {{- include.title-color -}};"> 
+			   <h3 style="color: {{- include.title-color -}};">
       {%- else -%}
-        <h2>
+        <h3>
       {%- endif -%}
         {%- if include.auto-header == null or include.auto-header == 'use-title' -%}
           {{- _title -}}
         {%- else -%}
           {{- include.auto-header -}}
         {%- endif -%}
-      </h2>
+      </h3>
       {%- if include.subtitle -%}<p>{{- include.subtitle -}}</p>{%- endif -%}
 		</header>
 	{%- endcapture -%}

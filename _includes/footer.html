@@ -4,8 +4,9 @@
   <!-- Copyright -->
   <ul class="copyright">
     {% if site.title or site.author %}
-      <li>&copy; {{- site.title | default: site.author -}}. All rights reserved.</li>
+      <li>&copy; {{- site.title | default: site.author -}}.</li>
     {% endif %}
+    <li><a href="{{site.url}}{{site.baseurl}}/impressung-datenschutz.html">Impressum / Datenschutzerklärung</a></li>
   </ul>
 
 </div>
