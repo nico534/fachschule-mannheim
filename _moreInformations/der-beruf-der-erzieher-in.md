@@ -1,6 +1,6 @@
 ---
 title: Der Beruf des Erziehers-der Erzieherin und weitere Möglichkeiten
-layout: page
+layout: info
 icon: fa-file-alt
 order: 3
 ---

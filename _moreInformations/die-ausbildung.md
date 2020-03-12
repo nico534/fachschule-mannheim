@@ -1,6 +1,6 @@
 ---
 title: Die Ausbildung
-layout: page
+layout: info
 icon: fa-file-alt
 order: 1
 ---

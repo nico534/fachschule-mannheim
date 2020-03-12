@@ -1,6 +1,6 @@
 ---
 title: Aufbau der Ausbildung
-layout: page
+layout: info
 icon: fa-file-alt
 order: 2
 ---
