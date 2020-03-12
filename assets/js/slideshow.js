@@ -101,6 +101,7 @@ function dragStart (e){
 }
 
 function dragAction (e){
+  if(!canTranslate) return;
   e = e || window.event;
     if (e.type == 'touchmove') {
       offset = (posX1 - e.touches[0].clientX);
@@ -112,6 +113,7 @@ function dragAction (e){
 }
 
 function dragEnd (e){
+  if(!canTranslate) return;
     if (counter - posInitial < -threshold) {
       counter = posInitial;
       left();
