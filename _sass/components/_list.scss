@@ -1,0 +1,25 @@
+ul {
+    list-style: disc;
+    list-style-position: inside;
+
+    &.icons {
+        cursor: default;
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            line-height: 2em;
+            text-align: center;
+            border: 0;
+        }
+    }
+}
+
+ol {
+    list-style: decimal;
+}

@@ -1,0 +1,49 @@
+{%- comment -%}
+  Include vars:
+  title
+  subtitle
+  title-color
+  photo
+  photo-alt
+  position-top
+{%- endcomment -%}
+
+{%- assign _title = include.title -%}
+{%- assign _slug = include.title | strip_html | slugify -%}
+
+{%- capture _photo -%}
+    {%-if position-top != "" -%}
+	   <img src="{{- include.photo | relative_url -}}" alt="{{- include.photo-alt -}}" class="back" style="object-position: 50% {{- include.position-top -}}">
+    {%- else -%}
+    <img src="{{- include.photo | relative_url -}}" alt="{{- include.photo-alt -}}" class="back">
+    {%- endif -%}
+{%- endcapture -%}
+{%- assign _class = 'shade-one cover dark' -%}
+
+{%- if include.auto-header == 'none' -%}
+	{%- assign _heading = "" -%}
+{%- else -%}
+	{%- capture _heading -%}
+		<header>
+      {%- if include.title-color != null -%}
+			   <h3 style="color: {{- include.title-color -}};">
+      {%- else -%}
+        <h3>
+      {%- endif -%}
+        {%- if include.auto-header == null or include.auto-header == 'use-title' -%}
+          {{- _title -}}
+        {%- else -%}
+          {{- include.auto-header -}}
+        {%- endif -%}
+      </h3>
+      {%- if include.subtitle -%}<p>{{- include.subtitle -}}</p>{%- endif -%}
+		</header>
+	{%- endcapture -%}
+{%- endif -%}
+
+<section class="bannerBox">
+  <div class="banner">
+    {{- _photo -}}
+    {{- _heading -}}
+  </div>
+</section>

@@ -1,0 +1,17 @@
+.item {
+    box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+
+    header {
+        color: #666;
+        text-align: center;
+        background: #fff;
+        margin: 0;
+        padding: 1em;
+        font-size: 0.8em;
+
+        h2 {
+            font-size: 1em;
+        }
+    }
+}

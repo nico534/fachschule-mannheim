@@ -1,0 +1,143 @@
+#header {
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'column');
+    @include vendor('justify-content', 'space-between');
+    background: $menuBackgroundColor url('images/overlay.png');
+    box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
+    color: #fff;
+    height: 100%;
+    left: 0;
+    overflow-y: auto;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 375px;
+
+    .top {
+        @include vendor('flex-grow', '1');
+    }
+
+    .bottom {
+        @include vendor('flex-shrink', '0');
+        padding: 1.5em 0 0.75em 0;
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .icons {
+        font-size: 0.8em;
+        text-align: center;
+
+        a {
+            color: #41484c;
+            @include vendor('transition', 'color 0.35s ease-in-out');
+
+            &:hover {
+                color: $navActivIconColor;
+            }
+        }
+    }
+}
+
+#logo {
+    position: relative;
+    margin: 5px;
+    min-height: 48px;
+    cursor: default;
+
+    a {
+        border: 0;
+    }
+
+    h3 {
+        position: relative;
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.9em;
+        line-height: 1em;
+    }
+
+    p {
+        position: relative;
+        display: block;
+        font-size: 0.6em;
+        font-weight: 390;
+        color: $navInactiveColor;
+        line-height: 1.25em;
+        margin: 0.5em 0 0 0;
+    }
+
+    .image {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+#nav {
+    ul {
+        list-style: none;
+        margin-bottom: 0;
+        hr {
+            margin: auto 1.5em;
+        }
+
+        li {
+            a {
+                display: block;
+                padding: 0.5em 1.5em 0.5em 1.5em;
+                color: rgba(0, 0, 0, 0.8);
+                text-decoration: none;
+                outline: 0;
+                border: 0;
+                @include vendor('transition', 'color 0.3s ease-in-out');
+                //@include vendor('transition', 'none');
+                span {
+                    position: relative;
+                    display: block;
+                    font-size: 0.8em;
+
+
+                    &::before {
+                        position: absolute;
+                        left: 0;
+                        @include vendor('transition', 'color 0.3s ease-in-out');
+                        color: $iconInactiveColor;
+                        text-align: center;
+                        width: 1.25em;
+                        line-height: 1.75em;
+                    }
+                }
+
+                &:hover{
+                    color: $navActivIconColor;
+                    span::before {
+                        color: $navActivIconColor;
+                    }
+                }
+
+                &.active {
+                    background: rgba(0, 0, 0, 0.15);
+                    box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
+                    color: $navActivIconColor;
+                    font-weight: 400;
+
+                    span::before {
+                        color: $navActivIconColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#sub_title {
+	padding: 0 10px;
+}
+
+.main_logo {
+	width: 95%;
+	height: auto;
+}

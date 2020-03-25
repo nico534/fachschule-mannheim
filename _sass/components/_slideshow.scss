@@ -1,0 +1,31 @@
+.outer_slider {
+	margin: 10px auto;
+	width: 500px;
+	max-width: 500px;
+}
+
+.slider {
+	overflow: hidden;
+	width: 100%;
+	user-select: none;
+}
+
+.slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	user-select: none;
+	cursor: all-scroll;
+}
+
+.slider figure img {
+	float: left;
+	width: 20%;
+	user-select: none;
+}
+
+.right{
+	float: right;
+	margin-top: 2px;
+}

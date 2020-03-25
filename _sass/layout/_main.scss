@@ -1,0 +1,137 @@
+#main {
+    margin-left: 375px;
+    > section {
+        text-align: center;
+    }
+    > article {
+        text-align: left;
+        header {
+            p {
+                font-style: italic;
+            }
+        }
+    }
+    > section, article {
+        margin: 0;
+        overflow: hidden;
+        padding: 4em 0;
+        box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+        background-image: url('images/overlay.png');
+
+        &.dark {
+            color: #1d1d1d;
+            color: rgba(20, 20, 20, 1);
+            font-weight: bold;
+
+            h1, h2, h3, h4, h5, h6 {
+                color: inherit;
+                font-weight: inherit;
+            }
+
+            span {
+                background-color: rgba(240, 240, 240, 0.5);
+            }
+
+            strong {
+                color: #000;
+                border-color: inherit;
+                font-weight: inherit;
+            }
+
+            a {
+                color: #1d1d1d;
+                border-color: inherit;
+                font-weight: inherit;
+
+                &:hover {
+                    border-bottom-color: rgba(20, 20, 20, 0);
+                }
+            }
+        }
+
+        &.cover {
+            padding: 6em 0;
+            position: relative;
+            z-index: 0;
+            img.back {
+                position: absolute;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: -1;
+            }
+        }
+
+        &.shade-one {
+            background-color: #81918E;
+        }
+
+        &.shade-two {
+            background-color: #f5fafa;
+        }
+
+        &.shade-three {
+            background-color: #ecf1f1;
+        }
+
+        &.shade-four {
+            background-color: #e8edec;
+        }
+    }
+}
+
+// Banner
+
+.bannerBox{
+    position: relative;
+    padding: 8em 0 0 0 !important;
+    z-index: 0;
+    img.back {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.banner{
+    header{
+        margin-bottom: 0;
+
+        h3{
+            color: #000;
+            font-weight: 400;
+            font-size: 2.5em;
+            line-height: 0.8;
+            padding: 15px;
+            background-color: rgba(250, 250, 250, 0.5);
+        }
+    }
+}
+
+/* collapsible sections */
+
+.showMore{
+	margin: 0 auto auto auto;
+	display: block;
+}
+
+.showMoreBackground{
+	z-index: 100;
+	height: 50px;
+	margin-top: -5px;
+	background: rgba(243, 248, 248, 1);
+	-webkit-box-shadow: 0px 0px 19px 30px rgba(243,248,248,1);
+	-moz-box-shadow: 0px 0px 19px 30px rgba(243,248,248,1);
+	box-shadow: 0px 0px 19px 30px rgba(243,248,248,1);
+}
+
+.leftAlign {
+	text-align: left;
+	margin: 2em;
+}

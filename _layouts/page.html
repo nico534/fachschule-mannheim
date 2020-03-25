@@ -2,14 +2,23 @@
 layout: default
 ---
 {%- include header.html -%}
+{%- capture _banner  -%}assets/images/{{page.featured-img}}.jpg{%- endcapture -%}
 
 <!-- Main -->
 <div id="main">
 	<!-- Page -->
-	<article class="shade-two">
-	  <div class="container">
-			<header>
-				<h2>{{- page.title -}}</h2>
+    {%- if page.featured-img -%}
+        {%- include banner.html title=page.title photo=_banner subtitle = "" title-color = page.title-color photo-alt="banner" position-top=page.img-position-top -%}
+        <article class="shade-two">
+        <div class="container">
+        <header>
+    {%- else -%}
+        <article class="shade-two">
+        <div class="container">
+        <header>
+        <h2>{{- page.title -}}</h2>
+    {%- endif -%}
+
 				{%- if page.subtitle -%}<p>{{- page.subtitle -}}</p>{%- endif -%}
 			</header>
 	    {{- content -}}

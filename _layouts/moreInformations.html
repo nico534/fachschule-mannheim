@@ -3,18 +3,21 @@ layout: default
 ---
 {%- assign _moreInformations = site.moreInformations | sort: 'order' -%}
 {%- include header.html scrolly_nav=_moreInformations -%}
+
 <!-- Main -->
 <script src="{{- 'assets/js/slideOpen.js' | relative_url -}}" defer></script>
 
 <div id="main">
-	{%- if page.content != "" -%}
-		{%- include info_section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
-	{%- endif -%}
+    {%- if page.banner-img and page.banner-img-alt -%}
+        {%- include banner.html title=page.title photo=page.banner-img subtitle = page.subtitle title-color = page.title-color photo-alt=page.banner-img-alt position-top=page.img-position-top -%}
+    {%- endif -%}
 	<!-- sections -->
+    <div id="sliderContent">
 	{%- for _information in _moreInformations -%}
 		{%- include info_section.html title=_information.title title-color=_information.title-color photo=_information.cover-photo photo-alt=_information.cover-photo-alt auto-header=_information.auto-header content=_information.content -%}
 		<div class="showMoreBackground">
 			<button type="button" name="" class="showMore"></button>
 		</div>
 	{%- endfor -%}
+    </div>
 </div>

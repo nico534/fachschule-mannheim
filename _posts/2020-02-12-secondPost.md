@@ -1,5 +1,6 @@
 ---
 title: Stellenausschreibung
+featured-img: post1
 layout: post
 auto-header: none
 icon: fa-file-alt

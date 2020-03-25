@@ -1,0 +1,27 @@
+section, article {
+    margin-bottom: 3em;
+
+    > :last-child,
+    > .container,
+    &:last-child,
+    > .container > :last-child {
+        margin-bottom: 0;
+    }
+
+    .row > & {
+        margin-bottom: 0;
+    }
+
+    .row {
+        margin-top: 40px;
+    }
+
+    .row > * {
+        padding-top: 0;
+    }
+
+    ul, ol {
+        padding-left: 0.25em;
+        margin-left: 1.25em;
+    }
+}

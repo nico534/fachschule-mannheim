@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{%- assign _kontakte = site.kontakt | sort: 'order' -%}
+{%- include header.html scrolly_nav=_kontakte -%}
+<!-- Main -->
+
+<div id="main">
+    {%- if page.banner-img and page.banner-img-alt -%}
+        {%- include banner.html title=page.title photo=page.banner-img subtitle = page.subtitle title-color = page.title-color photo-alt=page.banner-img-alt position-top=page.img-position-top -%}
+    {%- endif -%}
+	<!-- sections -->
+	{%- for _kontakt in _kontakte -%}
+		{%- include section.html title=_kontakt.title title-color=_kontakt.title-color photo=_kontakt.cover-photo photo-alt=_kontakt.cover-photo-alt auto-header=_kontakt.auto-header content=_kontakt.content -%}
+	{%- endfor -%}
+</div>
