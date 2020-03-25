@@ -36,7 +36,7 @@
           {{- include.auto-header -}}
         {%- endif -%}
       </h3>
-      {%- if include.subtitle -%}<p>{{- include.subtitle -}}</p>{%- endif -%}
+      {%- if include.subtitle -%}{%- if include.subtitle != "" -%}<p>{{- include.subtitle -}}</p>{%- endif -%}{%- endif -%}
 		</header>
 	{%- endcapture -%}
 {%- endif -%}

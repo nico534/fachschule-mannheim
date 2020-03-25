@@ -34,19 +34,19 @@ $grey: gray;
   transition: box-shadow .25s ease;
 
   &.shade-one {
-      background-color: #81918E;
+      background-color: $backgroundOne;
   }
 
   &.shade-two {
-      background-color: #f5fafa;
+      background-color: $backgroundTwo;
   }
 
   &.shade-three {
-      background-color: #ecf1f1;
+      background-color: $backgroundThree;
   }
 
   &.shade-four {
-      background-color: #e8edec;
+      background-color: $backgroundFour;
   }
 
 
