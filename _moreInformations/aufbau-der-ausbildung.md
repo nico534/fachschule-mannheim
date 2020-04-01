@@ -46,7 +46,7 @@ Bei der Suche nach einem geeigneten Praktikumsplatz unterstützen wir Sie gerne!
 # Handlungsfelder
 
 * Berufliches Handeln fundieren
-*Erziehung und Betreuung gestalten
+* Erziehung und Betreuung gestalten
 * Entwicklung und Bildung fördern
 * Unterschiedlichkeit und Vielfalt leben
 * Zusammenarbeit und Qualität entwickeln
