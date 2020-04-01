@@ -9,7 +9,7 @@ order: 3
 
 
 Freie Fachschule für Sozialpädagogik Mannheim <br>
-Zielstraße 26 <br>
+Zielstraße 28 <br>
 68169 Mannheim <br>
 
 
