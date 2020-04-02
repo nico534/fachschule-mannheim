@@ -40,8 +40,8 @@ email: nicolai-huening@gmx.de
 avatar: assets/images/FaShuSymbolSchrift.png
 
 # You'll want to customize url and baseurl for your own site:
-baseurl: "/fachschule-mannheim" # the subpath of your site, e.g. /blog
-url: "https://nico534.github.io" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://localhost:3000" # the base hostname & protocol for your site
 
 # Social settings
 # Make sure to include the full url including protocol, e.g. https://github.com/chrisbobbe
@@ -56,9 +56,18 @@ pinterest_url:
 slack_url:
 dribbble_url:
 
+
+
 # Google Analytics Tracking ID goes here:
 google_analytics:
 
+# Atom-jekyll Einstellungen
+atom:
+  buildCommand:
+    - jekyll
+    - build
+  buildEnv:
+    JEKYLL_ENV: development
 
 # The following settings are NECESSARY for the Prologue theme to run:
 remote_theme: chrisbobbe/jekyll-theme-prologue

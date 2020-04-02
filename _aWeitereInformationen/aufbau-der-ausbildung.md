@@ -20,8 +20,6 @@ Zu Beginn der schulischen Ausbildung findet eine Einführungswoche statt. Die Sc
 
 In Form von  verschiedenen Veranstaltungen wird das Erlernte lebens- und praxisnah vertieft.
 
-
-
 # Praxisorientierte Ausbildungsform
 
 Im einjährigen Berufskolleg (1BKSP) und in der Fachschule (2BKSP) findet eine enge Verzahnung von Theorie und Praxis statt. Die Fachschüler sind im einjährigen Berufskolleg an 2 Tagen in der Woche in der Praxis und an 3 Tagen in der Schule.

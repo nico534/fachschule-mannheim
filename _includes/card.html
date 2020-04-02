@@ -11,12 +11,12 @@
     {% if post.featured-img %}
       <figure class="post-card__thumb">
         <img
-          src="{{ site.baseurl }}/assets/images/posts/{{post.featured-img}}_placehold.jpg"
-          data-srcset="{{ site.baseurl }}/assets/images/posts/{{post.featured-img}}_placehold.jpg, {{ site.baseurl }}/assets/images/posts/{{post.featured-img}}_thumb.jpg 2x"
+          src="{{- 'assets/images/posts' | relative_url }}/{{post.featured-img -}}_placehold.jpg"
+          data-srcset="{{- 'assets/images/posts' | relative_url }}/{{post.featured-img -}}_placehold.jpg, {{- 'assets/images/posts' | relative_url -}}/{{post.featured-img}}_thumb.jpg 2x"
           class="lazyload blur"
           alt="{{post.title}}"
         />
-        <noscript><img src="{{ site.baseurl }}/assets/images/posts/{{post.featured-img}}_placehold.jpg" alt="{{ post.title }}"></noscript>
+        <noscript><img src="{{- 'assets/images/posts' | relative_url }}/{{post.featured-img -}}_placehold.jpg" alt="{{ post.title }}"></noscript>
       </figure>
     {% else %}
       <figure class="post-card__thumb">

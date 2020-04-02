@@ -6,7 +6,7 @@
     {% if site.title or site.author %}
       <li>&copy; {{- site.title | default: site.author -}}.</li>
     {% endif %}
-    <li><a href="{{site.url}}{{site.baseurl}}/impressung-datenschutz.html">Impressum / Datenschutzerklärung</a></li>
+    <li><a href="{{- 'impressung-datenschutz.html' | relative_url -}}">Impressum / Datenschutzerklärung</a></li>
   </ul>
 
 </div>
